@@ -1,0 +1,46 @@
+/* font */
+@font-face {
+	font-family: "Poppins-Regular";
+	src: url(../fonts//Poppins-Regular\ 400.ttf);
+}
+@font-face {
+	font-family: "Poppins-SemiBold";
+	src: url(../fonts//Poppins-SemiBold\ 600.ttf);
+}
+
+/* reset style */
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+html {
+	scroll-behavior: smooth;
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+	margin: 0;
+}
+img,
+picture {
+	max-width: 100%;
+	display: block;
+}
+input,
+button,
+textarea,
+select {
+	font: inherit;
+}
+
+body {
+    font-family: "Poppins-Regular";
+}
