@@ -72,14 +72,14 @@ body {
 .btn-info:active,
 .btn-info:focus,
 .btn-info:hover {
-    width: fit-content;
+	width: fit-content;
 	background-color: var(--navy-blue);
 	box-shadow: none !important;
 	border-color: transparent;
-    color: #fff;
-    font-weight: 600;
-    font-size: 18px;
-    line-height: 27px;
+	color: #fff;
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
 }
 
 .hero {
@@ -161,7 +161,7 @@ body {
 
 .about-us__title {
 	position: relative;
-    width: fit-content;
+	width: fit-content;
 }
 
 .about-us__title::after {
@@ -169,8 +169,57 @@ body {
 	position: absolute;
 	height: 5px;
 	width: 100%;
-    background-color: var(--navy-blue);
+	background-color: var(--navy-blue);
 	bottom: 0;
+}
+
+.why-us .card {
+	padding: 55px 30px 30px;
+	width: 100%;
+	max-width: 360px;
+	height: 100%;
+	max-height: 430px;
+}
+
+.why-us__title {
+	width: fit-content;
+	position: relative;
+	margin-bottom: 80px;
+}
+
+.why-us__img {
+	max-width: 130px;
+	max-height: 130px;
+}
+
+.why-us__title::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 50%;
+	background-color: var(--navy-blue);
+	bottom: 0;
+	left: 0;
+	transform: translateX(50%);
+}
+
+.why-us__card {
+	background-color: var(--creamy);
+	border-radius: 30px;
+	border: none;
+}
+
+.why-us .card-title {
+	font-family: "Poppins-SemiBold";
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 33px;
+	margin: 39px 0 15px;
+}
+
+.why-us .card-text {
+	font-size: 18px;
+	line-height: 30px;
 }
 
 /* font size */
