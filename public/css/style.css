@@ -8,6 +8,12 @@
 	src: url(../fonts//Poppins-SemiBold\ 600.ttf);
 }
 
+/* color */
+:root {
+	--navy-blue: #1e3c72;
+	--dark: #000;
+}
+
 /* reset style */
 *,
 *::before,
@@ -42,5 +48,63 @@ select {
 }
 
 body {
-    font-family: "Poppins-Regular";
+	font-family: "Poppins-Regular";
+}
+
+.nav {
+}
+
+.nav__icon {
+	max-width: 69px;
+	max-height: 69px;
+}
+
+.nav__title {
+	color: var(--navy-blue);
+	font-family: "Poppins-SemiBold";
+}
+.nav__link {
+	color: var(--dark) !important;
+}
+.nav__item:not(:last-child) {
+	margin-right: 53px;
+}
+
+.nav__button,
+.nav__button:active,
+.nav__button:focus,
+.nav__button:hover {
+	background-color: var(--navy-blue);
+	box-shadow: none !important;
+	border-color: transparent;
+}
+
+/* font size */
+.fs-30 {
+	font-size: 30px;
+}
+.fs-18 {
+	font-size: 18px;
+}
+
+/* line height */
+.lh-45 {
+	line-height: 45px;
+}
+.lh-27 {
+	line-height: 27px;
+}
+
+/* font weight */
+.fw-500 {
+	font-weight: 500;
+}
+.fw-600 {
+	font-weight: 600;
+}
+
+/* padding */
+.px-40 {
+	padding-right: 40px;
+	padding-left: 40px;
 }
