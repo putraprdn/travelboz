@@ -12,6 +12,7 @@
 :root {
 	--navy-blue: #1e3c72;
 	--dark: #000;
+	--creamy: #f2f2f280;
 }
 
 /* reset style */
@@ -51,9 +52,6 @@ body {
 	font-family: "Poppins-Regular";
 }
 
-.nav {
-}
-
 .nav__icon {
 	max-width: 69px;
 	max-height: 69px;
@@ -70,13 +68,82 @@ body {
 	margin-right: 53px;
 }
 
-.nav__button,
-.nav__button:active,
-.nav__button:focus,
-.nav__button:hover {
+.btn-info,
+.btn-info:active,
+.btn-info:focus,
+.btn-info:hover {
 	background-color: var(--navy-blue);
 	box-shadow: none !important;
 	border-color: transparent;
+}
+
+.hero {
+	background-color: var(--creamy);
+	border-radius: 0px 0px 100px 100px;
+	padding: 70px 0 80px;
+}
+
+.hero__title {
+	font-family: "Poppins-SemiBold";
+	text-transform: capitalize;
+}
+
+.hero__btn {
+	width: fit-content;
+	text-transform: capitalize;
+	font-weight: 600;
+	margin-bottom: 140px;
+}
+
+.hero__icon {
+	border: 3px solid #fff;
+	padding: 3px 7px !important;
+}
+
+.hero__info > div {
+	/* border-right: 2px solid #c4c4c499; */
+	position: relative;
+	padding-right: 19px;
+	/* border */
+}
+
+.hero__info > div::after {
+	content: "";
+	position: absolute;
+	right: 0;
+	top: 28%;
+	/* bottom: 50%; */
+	width: 2px;
+	height: 50%;
+	background-color: #c4c4c499;
+}
+
+.hero__info > div:not(:last-child) {
+	margin-right: 24px;
+}
+
+.hero__info .total {
+	font-family: "Poppins-SemiBold";
+	font-weight: 500;
+	font-size: 30px;
+	line-height: 45px;
+}
+
+.hero__info .description {
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.hero__image > div:nth-child(1) img:nth-child(1) {
+	border-radius: 130px 130px 10px 130px;
+}
+
+.hero__image > div:nth-child(1) img:nth-child(2) {
+	border-radius: 130px 10px 130px 130px;
+}
+
+.hero__image > div:nth-child(2) img:nth-child(1) {
+	border-radius: 130px 130px 130px 10px;
 }
 
 /* font size */
@@ -86,6 +153,9 @@ body {
 .fs-18 {
 	font-size: 18px;
 }
+.fs-44 {
+	font-size: 44px;
+}
 
 /* line height */
 .lh-45 {
@@ -93,6 +163,9 @@ body {
 }
 .lh-27 {
 	line-height: 27px;
+}
+.lh-66 {
+	line-height: 66px;
 }
 
 /* font weight */
@@ -107,4 +180,9 @@ body {
 .px-40 {
 	padding-right: 40px;
 	padding-left: 40px;
+}
+
+/* margin */
+.mb-100 {
+	margin-bottom: 100px;
 }
