@@ -72,9 +72,14 @@ body {
 .btn-info:active,
 .btn-info:focus,
 .btn-info:hover {
+    width: fit-content;
 	background-color: var(--navy-blue);
 	box-shadow: none !important;
 	border-color: transparent;
+    color: #fff;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
 }
 
 .hero {
@@ -83,9 +88,13 @@ body {
 	padding: 70px 0 80px;
 }
 
-.hero__title {
+.hero__title,
+.title {
 	font-family: "Poppins-SemiBold";
 	text-transform: capitalize;
+	font-size: 44px;
+	line-height: 66px;
+	color: var(--dark);
 }
 
 .hero__btn {
@@ -146,6 +155,24 @@ body {
 	border-radius: 130px 130px 130px 10px;
 }
 
+.about-us {
+	margin: 120px 0 120px;
+}
+
+.about-us__title {
+	position: relative;
+    width: fit-content;
+}
+
+.about-us__title::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 100%;
+    background-color: var(--navy-blue);
+	bottom: 0;
+}
+
 /* font size */
 .fs-30 {
 	font-size: 30px;
@@ -158,11 +185,14 @@ body {
 }
 
 /* line height */
-.lh-45 {
-	line-height: 45px;
-}
 .lh-27 {
 	line-height: 27px;
+}
+.lh-30 {
+	line-height: 30px;
+}
+.lh-45 {
+	line-height: 45px;
 }
 .lh-66 {
 	line-height: 66px;
