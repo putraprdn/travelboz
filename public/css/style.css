@@ -319,18 +319,6 @@ body {
 	width: fit-content;
 }
 
-/* .parnter__logo-wrap img {
-	margin: 0 8px;
-}
-
-.parnter__logo-wrap:first-child {
-	margin-left: 0;
-}
-
-.parnter__logo-wrap:last-child {
-	margin-right: 0;
-} */
-
 .partner__title::after {
 	content: "";
 	position: absolute;
@@ -340,6 +328,116 @@ body {
 	bottom: 0;
 	right: 50%;
 	transform: translateX(50%);
+}
+
+.testimonial {
+	margin-top: 100px;
+	background-color: var(--creamy);
+	padding: 40px 0;
+}
+
+.testimonial__title {
+	position: relative;
+	width: fit-content;
+	margin-bottom: 70px;
+}
+
+.testimonial__title::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 45%;
+	background-color: var(--navy-blue);
+	bottom: 0;
+	left: 0;
+}
+
+.testimonial__card {
+	max-width: 560px !important;
+	width: 100%;
+	position: relative;
+	background-color: #fff;
+	padding: 50px 45px;
+	border-radius: 20px;
+	border: 1px solid #dadada99;
+	margin-bottom: 50px;
+	/* box-shadow: 0px 67px 500px rgba(0, 0, 0, 0.0242336),
+		0px 14.9653px 111.682px rgba(0, 0, 0, 0.0357664),
+		0px 4.45557px 33.2505px rgba(0, 0, 0, 0.06); */
+}
+
+.slick-slide {
+	margin: 15px;
+}
+
+.slick-dots li button {
+	width: 20px;
+	height: 20px;
+	border: 1px solid#00000080;
+	border-radius: 50%;
+}
+
+.slick-dots li button::before {
+	color: transparent !important;
+}
+
+.slick-dots .slick-active {
+	border-radius: 50%;
+	background-color: var(--navy-blue);
+}
+
+.slick-next,
+.slick-prev {
+	opacity: 1 !important;
+	color: var(--navy-blue);
+	top: 43% !important;
+}
+
+.slick-prev {
+	left: -40px;
+}
+
+.slick-next::before,
+.slick-prev::before {
+	opacity: 0.75;
+	/* line-height: 0; */
+	font-size: 35px;
+	color: var(--navy-blue);
+}
+
+.testimonial__card .quote {
+	position: absolute;
+	top: 10px;
+	left: 25px;
+}
+
+.testimonial__review {
+	font-style: italic;
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 32px;
+	margin-bottom: 30px;
+}
+
+.testimonial__name {
+	font-weight: 600;
+	font-size: 18px;
+	line-height: 27px;
+	color: var(--navy-blue);
+}
+
+.testimonial__info {
+	font-weight: 400;
+	font-size: 18px;
+	line-height: 27px;
+}
+
+.testimonial__rating-wrap {
+	height: fit-content;
+}
+
+.testimonial__rating-wrap p {
+	margin-top: 5px !important;
 }
 
 /* font size */
