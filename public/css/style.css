@@ -302,6 +302,46 @@ body {
 	padding: 8px 20px;
 }
 
+.partner__title {
+	position: relative;
+	width: fit-content;
+	margin-bottom: 75px;
+}
+
+.partner__logo-wrap .row > div {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.partner__logo-wrap .row-cols-5 > div,
+.partner__logo-wrap .row-cols-4 > div {
+	width: fit-content;
+}
+
+/* .parnter__logo-wrap img {
+	margin: 0 8px;
+}
+
+.parnter__logo-wrap:first-child {
+	margin-left: 0;
+}
+
+.parnter__logo-wrap:last-child {
+	margin-right: 0;
+} */
+
+.partner__title::after {
+	content: "";
+	position: absolute;
+	height: 5px;
+	width: 60%;
+	background-color: var(--navy-blue);
+	bottom: 0;
+	right: 50%;
+	transform: translateX(50%);
+}
+
 /* font size */
 .fs-30 {
 	font-size: 30px;
